@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+#container-room-list .room-item   {
+	 margin: 0.5rem 1rem;
+    width: 20rem;
+}
+
+ #container-room-list  {
+	
+    width: 100%;
+    margin: 0 auto 5rem;
+    position: relative;
+    text-align: center;
+}
+
+.room-item{
+	background: royalblue;
+    display: inline-block;
+	position: relative;
+	text-align: left;
+	border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+border-bottom-right-radius: 1rem;
+border-bottom-left-radius: 1rem;
+	
+}	
+
+img{
+	width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+margin: 0;
+max-width: 100%;
+}
+
+.roomImage{
+	
+	margin: 0;
+padding: 0;
+position: relative;
+padding-bottom: 59%;
+overflow: hidden;
+}
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+.join{
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+font-weight: 700;
+top: 0;
+left: 0;
+color: #fff;
+	
+}
+.join span {
+font-size: 1.8rem;
+position: relative;
+top: 50%;
+}
+
+.user-count{
+position: absolute;
+bottom: 4.7rem;
+right: 1rem;
+font-size: 1.3rem;
+font-weight: 700;
+color: white;
+}
+	.user-info a {
+    color: white;
+    padding-left: 8px;
+}
+	.icon-people {
+   
+    font-size: 1rem;
+    color: #878c8e;
+   
+}
+
+.description {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header .name {
+    line-height: .8;
+	color: white;
+}
+
+.user-info {
+   font-size: 1rem;
+    color: #878c8e;
+}
+
+.room-user {
+    white-space: nowrap;
+	color: whitesmoke;
+}
+
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}	
+	
+html, body {
+    height: 100%;
+}
+
+.pagelayout{
+    margin:auto;
+    position: relative;
+    width:100%;
+}
+
+.row:after {
+	
+	display:none;
+	
+}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+header{
+    
+padding-bottom:3%;
+font-weight: 700;
+font-size: 1.2rem;
+overflow: hidden;
+}
+
+
+#head_Section{
+padding-bottom:3%;
+font-weight: 700;
+font-size: 1.2rem;
+overflow: hidden;	
+padding-left:25px;
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+.wrapper{
+    overflow: hidden;
+    min-height: 1%;
+}
+.login-area{
+width: 300px;
+float :right;
+}
+
+body{
+	 background-attachment: fixed;
+	
+}
+
+.current-song {
+    display: block;
+    background: #2f2f2f;
+    font-style: italic;
+    font-weight: 700;
+    font-size: .85rem;
+    color: #878c8e;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+#rightSideContainer{
+  width:37%;
+}
+.search{
+  padding-left: 15px;
+}
+.tabs {
+	overflow-x: hidden;
+	
+}
+#search{
+   
+    color: white;
+    font-color:black;
+}
+.search-wrapper{
+    display: inline;
+}
+.header-container{
+height: 4em;
+}
+.username{
+    color: chocolate;
+    font-size:12px;
+    min-width: 7em;
+}
+.time{
+    color: chocolate;
+    font-size:12px;
+    min-width: 7em;
+}
+
+.pages{
+
+    background: chocolate;
+
+}
+.pagetitle {
+    display: inline;
+    padding: 6em;
+}
+.pagetitle img{
+        border-radius: 41px;
+    width: 60px;
+    margin: 10px;
+	margin-left: 3%;
+}
+.title{
+    height:58px;
+    margin:0em;
+    width:7em;
+    margin-left:1%
+}
+.subtitles{
+    display:inline-flex;
+	padding: 3%;
+}
+ul.menu{
+    list-style-type: none;
+    margin-top: -29px;
+    margin-right: 12em;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    float:right;
+    width:16em;
+}
+
+
+.contentDivImg{
+    display: none;
+}
+
+ul.menu li{
+    margin-left: 1em;
+}
+
+main{
+    height:80%;
+    flex: 1 0 auto;
+
+}
+.pagination li {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    line-height: 30px;
+    border-radius: 196px;
+    text-align: center;
+    font-size: large;
+    margin: 1.5%;
+    margin-left: 2%
+}
+div.tabs{
+    position: absolute;
+    margin-top: 2em;
+    width:45em;
+    margin-left: 1em
+}
+div.tabs a{
+    padding: 1em;
+    color:#d1cea9;
+}
+
+.line{
+width:44em;
+margin:3em -16em;
+
+}
+.main-container{
+    margin: 24px;
+}
+.postsContainer{
+    margin: auto;
+    height:50em;
+    width:51em;
+    padding-top:6em;
+}
+.postname{
+    font-size: 17px;
+    color:midnightblue;
+    margin:1em 0em 0em 0em;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+.posting-area{
+    width: auto;
+    height:auto;
+}
+legend{
+    font-family: -webkit-pictograph;
+    color: firebrick;
+}
+.modal{
+    position: fixed;
+    left: 40%;
+    right:50%;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 100%;
+    width: 25%;
+    overflow-y: auto;
+    border-radius: 9px;
+    will-change: top, opacity;
+}
+.btn, .btn-large {
+	background-color: #26A6E1;
+	
+}
+div#modal1.modal{
+    height: 214px;
+    width: 34%;
+}
+
+#
+.rank{
+    width: 5px;
+    float: left;
+}
+#checkbox{
+    position:static;
+    visibility: visible;
+}
+.votes{
+    float: left;
+    margin-right: 1em;
+    margin-left: 0em;
+    overflow: hidden;
+    border-radius:4px;
+    margin-top: 1%;
+    }
+    .votesNum{
+        color: chocolate;
+        font-size: 15px;
+    }
+    .image{
+        width:200px;
+		padding-top: 15px;
+ }
+ i{
+    cursor:pointer ;
+ }
+ .play{
+    font-size:15px;
+    color:lightgrey;
+ }
+ nav {
+  background :   linear-gradient(to left, #2c3e50 , #3498db);
+ position:fixed;
+ 
+ 
+        
+}
+ 
+ .user_image{
+	 
+
+margin-left: -32px;
+width: 23px;
+padding-top: 4px;	
+	 
+ }
+ 
+ .pause{
+  font-size:15px;
+    color:lightgrey;
+ }
+    .postimage{
+    display: table-cell;
+    text-align:left;
+    vertical-align: top;
+    border-radius: 1em;
+    margin-top: 6px;
+     width:70px;
+     height:60px;
+    }
+    .Content-List {
+    overflow: hidden;
+    margin-left: 9em;
+    margin-top: -5em;
+    opacity: 1;
+    padding: 0em 1em;
+}
+#numbering{
+    margin-top: 27px;
+}
+.postContent
+{
+    margin: 1em -5em 0em;
+    padding: 0em 1em;
+    float: left;
+    width: 57em;
+    min-height: 5em;
+    overflow: hidden;
+
+}
+
+#fb_login {
+    float: left;
+    width: 81px;
+    padding-top: 98%;
+    padding-left: 2%;
+    margin-left: 7px;
+}
+
+.voteUpButton{
+  cursor: pointer;
+}
+
+.voteDownButton{
+  cursor: pointer;
+}
+
+.post-meta-icon{
+        text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color:lightgrey;
+}
+.pagination{
+    width: 40em;
+    margin-right: 2%;
+    padding-left: 54px;
+}
+
+footer.page-footer{
+   
+   background-color:lightblue;
+}
+
+footer {
+ position:relative;
+ bottom:0;
+ background-color:rgba(17, 18, 23, 0.68);
+}

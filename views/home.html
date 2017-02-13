@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>savtrack</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/javascripts/jquery-1.12.1.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="/javascripts/home.js"></script>
+    <!-- <script src="/audiojs/audio.min.js"></script>-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	  <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
+    <!--JQuery validation script-End-->
+    <!-- Start materialize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+	<script type="text/javascript" src="/javascripts/upload.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--End materialize css-->
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/style1.css"> -->
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <nav>
+                    <div class="nav-wrapper">
+                        <div class="pagetitle">
+                            <img src="/image/letter.png">
+                        <a href="http://localhost:3000/" id="homepage" class="brand-logo">Savtrack</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul id = "top_bar" class="right hide-on-med-and-down">
+                            <li><a id="logoutTopNav"><strong>Log Out</strong></a></li>
+                            <li> <span id="user"></span></li>
+                        </ul>
+                    </div>
+                </nav>
+		</div>
+    </div>
+</header>
+
+<div class = "row">
+<div id = "upload">
+<a id="uploadmodal" class="modal-trigger waves-effect waves-light btn" href="#uploadbox">Upload Songs</a>
+ <div id="uploadbox" class="modal">
+          <div id='uploadarea' class='row area_upload'>
+          <div class = 'col s12 child_upload'><label class ='col s3' for="fileBox">Choose A File: </label><input type="file" class='col s9' id="filebox"></div>
+          <div class = 'col s12 child_upload'><label class ='col s3' for="namebox">Name: </label><input type="textbox" class='col s9' id="namebox"></div>
+          <div  id = "control_buttons" class = 'col s12 child_upload'><button type='button' id='uploadbutton' class='col s2 waves-effect waves-light btn'>Upload</button><button type='button' id='closebutton' class='col s2 waves-effect waves-light btn'>Close</button></div>
+        </div>
+     </div>
+</div>
+<section class="col" id="top-15">
+ <h5 id = "songgs">Media List</h5>
+  <ul id="list" style="">
+	<li><input type = "button" class="song" value = "FifthHarmony.mp3"></li>
+    <li><input type = "button" class="song" value = "Angel.mp3"></li>
+    <li><input type = "button" class="song" value = "Dude.mp3"></li>
+	<li><input type = "button" class="song" value = "THEHOBBIT.mp4"></li>
+  </ul>
+</section>
+  
+  
+ <div class="video" style="text-align: center;">
+               <li id="CurrSong" class="active validate">Curent Song<p id = "currentSong"> </p></li>
+               <!-- <label for="name">CurrentSong</label> -->
+			  <video  class="audio_src" controls="" id="audio_src">
+              </video>
+ </div>
+ </div> 
+
+   <!-- chat aplication code -->
+<section id = "chat_box">
+<div id ="chat_header">
+<h5>Chat Room</h5>
+</div>
+<div class = "chat_window">
+<div  id = "chat_win" class = "message_box">
+<ul id="messages"></ul>
+</div>
+<form action="">
+      <input id="m" placeholder="Join the conversation...." autocomplete="off" /><button id ="send" class="song" >Send</button>
+ </form>
+
+</div>
+</section>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sav-Track</title>
+  <!-- Start materialize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+	<link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+</head>
+
+<body background="image/background.jpg">
+    <div id="wrapper">
+        <header>
+            <div class="header-container">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="pagetitle">
+                        <img src="image/letter.png">
+                        <a href="" id="homepage" class="brand-logo">Savtrack</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a id="loginTopNav" class="modal-trigger" href="#modal2">Log In</a></li>
+                            <li><a id="logoutTopNav">Log Out</a></li>
+                            <li><a id="signUp" class="modal-trigger" href="#modal3">Sign Up</a></li>
+                            <li><a class="postnews modal-trigger" href="#modal1">Create Room</a></li>
+                            <li> <span id="user"></span></li>
+                            <li class="search">
+                                <form id="SearchForm">
+                                    <div class="search-wrapper">
+                                        <input id="search" type="text" placeholder="Search" autocomplete="off">
+
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a class="modal-trigger" href="#modal2">Log In</a></li>
+                            <li><a class="modal-trigger" href="#modal3">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </nav>
+				</div>
+            </div>
+
+        </header>
+
+        
+        <main class="mainContainer">
+
+            <div class="pagelayout">
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal">
+                    <div class="la modal-content">
+
+                        <legend>Login</legend>
+                        <br>
+                        <br>
+                        <input type="text" placeholder="username" id="username">
+                        <br>
+                        <br>
+                        <input type="password" placeholder="password" id="password">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="modal-footer">
+                        <a id="submit" class="waves-effect waves-light btn">login</a>
+                    </div>
+
+                </div>
+
+
+                <!--Modal Login structure end-->
+
+                <!-- Modal Structure for signup -->
+                <div id="modal3" class="modal">
+                    <div class=" na modal-content">
+                        <legend>Sign Up!</legend>
+                        <br>
+                        <input type="text" placeholder="username" id="reguser">
+                        <br>
+
+                        <input type="password" placeholder="password" id="regpass">
+
+                        <br>
+                        <input type="password" placeholder="Confirm password" id="confirmpass">
+                    </div>
+                    <br>
+                    <div class="modal-footer">
+                    <a id="Register" class="waves-effect waves-light btn">Register</a>
+                    </div>
+
+                </div>
+
+
+                <!--Modal signup structure end-->
+
+
+                <!-- Modal Structure for posts -->
+                <div id="modal1" class="modal">
+
+                    <div class="posting-area ">
+
+                        <form id="postform">
+                            <div class="modal-content">
+
+                                <span>CREATE ROOM</span>
+                                <br>
+                                <div id="textinput">
+                                    <input class="input-field validate" placeholder="enter your room name" type="text" name="input1" id="room_name">
+                                </div>
+                                <br>
+                            </div>
+
+                            <div class="modal-footer">
+
+                                <button id="createbutton" class="waves-effect waves-light btn" >CREATE</button>
+                                <span id="spanbutton"></span>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+                <!--Modal post structure end-->
+
+                <div id="container-room-list">
+                </div>
+
+
+            </div>
+            <!-- An empty div which will be populated using jQuery for pagination -->
+            <div id='page_navigation'>
+                <ul class="pagination">
+
+                </ul>
+            </div>
+        </main>
+
+        <!--footer-->
+        <!--<footer id = "footer" class=" page-footer">
+               <div class="footer-copyright">
+                <div class="container">
+                    <strong> &copy; 2016 karthik k </strong> 
+
+                </div>
+            </div>
+        </footer>-->
+    </div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js" type="text/JavaScript"></script>
+    <!--JQuery validation script-Start-->
+
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js" type="text/JavaScript"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    <script src="javascripts/savTrack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>
