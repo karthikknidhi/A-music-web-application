@@ -12,6 +12,7 @@ var UserSchema = new mongoose.Schema({
 UserSchema.methods.generateJWT = function() {
 
   // set expiration to 60 days
+	console.log("im herererere");
   var today = new Date();
   var exp = new Date(today);
   exp.setDate(today.getDate() + 60);

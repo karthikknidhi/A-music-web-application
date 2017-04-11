@@ -50,7 +50,7 @@ $(document).ready(function () {
 
         var username = $('#username').val();
         var password = $('#password').val();
-
+	console.log(username);
 
         if (username === "" || password === "") {
             $('#divMess').show();

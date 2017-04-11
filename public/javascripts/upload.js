@@ -37,7 +37,7 @@ auth.currentUser = function () {
 
 function ready() {
 
-    $("#uploadmodal").leanModal();
+    $('.modal-trigger').leanModal();
     if (window.File && window.FileReader) {
         document.getElementById('filebox').addEventListener('change', fileChosen);
         document.getElementById('uploadbutton').addEventListener('click', startUpLoad);

@@ -3,6 +3,7 @@
 /* jshint browser: true, jquery: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, undef: true, unused: true, strict: true, trailing: true */
 var main = function () {
     var auth = {};
+    $('.modal-trigger').leanModal();
     $("#logoutTopNav").hide();
     $(".postnews").hide();
 
@@ -75,7 +76,7 @@ var main = function () {
             }); //end of foreach function
             //session storage variable
             $(".button-collapse").sideNav();
-            $('.modal-trigger').leanModal();
+            
             $('.tooltipped').tooltip({
                 delay: 50
             });
@@ -102,8 +103,7 @@ var main = function () {
 
         var username = $('#username').val();
         var password = $('#password').val();
-
-
+	
         if (username === "" || password === "") {
             alert("Oops its empty");
 
@@ -113,14 +113,14 @@ var main = function () {
                 username: username,
                 password: password
             };
-
+		console.log(username);
             $.ajax({
                 url: "/login",
                 data: parameters,
                 type: "POST",
-                dataType: "json",
-                success: function (data) {
-                    if (data.message === "No such user present") {
+                dataType: "json"}).done(function(data) {
+		console.log(data);
+                if (data.message === "No such user present") {
                         alert("no such user");
                     } else {
                         //currUserName = username;
@@ -128,10 +128,9 @@ var main = function () {
                         auth.saveToken(data.token, username);
 
                     }
-                }
-            });
-
-            $('#modal2').closeModal();
+                });
+	
+             $('#modal2').closeModal();
 
         }
 

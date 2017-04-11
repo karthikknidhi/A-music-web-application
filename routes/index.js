@@ -14,6 +14,7 @@ module.exports = function (io) {
     var exec = require('child_process').exec;
     var util = require('util');
     var path = require('path');
+    var stream = require('readable-stream');
     var fs = require('fs');
     var socket;
     var chat_username;
@@ -82,7 +83,7 @@ module.exports = function (io) {
                 fs.write(files[name]['Handler'], files[name]['Data'], null, 'Binary', function (err, Writen) {
                     var inp = fs.createReadStream("public/Temp/" + name);
                     var out = fs.createWriteStream("public/audio/" + name);
-                    util.pump(inp, out, function () {
+                    inp.pipe(out, function () {
                         fs.unlink("public/Temp/" + name, function () {});
                     });
                     exec("ffmpeg -i public/audio/" + name + " -ss 01:30 -r 1 -an -vframes 1 -f mjpeg public/audio/" + narep + ".jpg", function (err) {
@@ -359,20 +360,24 @@ module.exports = function (io) {
 
     // login for user
     router.post('/login', function (req, res, next) {
+	console.log(req.body);
         if (!req.body.username || !req.body.password) {
             return res.status(400).json({
                 message: 'Please fill out all fields'
             });
         }
         chat_username = req.body.username;
-        // console.log("myusernamelogin" + chat_username);
+        console.log("mypassword" + req.body.password);
         passport.authenticate('local', function (err, user, info) {
-            if (err) {
+            console.log("im herer");
+		if (err) {
+		
                 return next(err);
             }
 
             if (user) {
-                return res.json({
+			
+		  return res.json({
                     token: user.generateJWT()
                 });
             } else {
@@ -381,6 +386,7 @@ module.exports = function (io) {
                 });
             }
         })(req, res, next);
+	
 
     });
 
