@@ -185,7 +185,7 @@ module.exports = function (io) {
     io.on('connection', function (socket) {
 
         socket.on('chat message', function (msg) {
-            //console.log("usermessage" + msg.username);
+            console.log("usermessage" + msg.username);
             io.emit('chat message', {
                 "message": msg.message,
                 "username": msg.username
