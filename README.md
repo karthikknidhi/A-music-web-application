@@ -1,8 +1,6 @@
 A social Music Web Application that allows users to Manage playlists , Control Over Pause and play of the song , upload songs and allow other users to interact and listen to their songs
 
-The app is built with Node.js with MongoDb using Mongoose ORM 
-
-It also includes a chat application built using Socket.IO
+The app is built using Node.js with Express framework and MongoDb . It also includes a chat application built using Socket.IO
 
 <Strong> Pre requisities: </Strong>
 
