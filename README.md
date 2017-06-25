@@ -1,4 +1,4 @@
-A social Music Web Application that allows users to Manage playlists , upload songs and allow other users to interact and listen to their songs
+A social Music Web Application that allows users to Manage playlists , Control Over Pause and play of the song , upload songs and allow other users to interact and listen to their songs
 
 The app is built with Node.js with MongoDb using Mongoose ORM 
 
