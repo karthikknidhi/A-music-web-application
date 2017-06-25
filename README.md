@@ -4,7 +4,7 @@ The app is built with Node.js with MongoDb using Mongoose ORM
 
 It also includes a chat application built using Socket.IO
 
-Pre requisities:
+<Strong> Pre requisities: </Strong>
 
 Node - Version 6 and above
 Mongodb server 
