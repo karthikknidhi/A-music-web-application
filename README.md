@@ -7,8 +7,10 @@ It also includes a chat application built using Socket.IO
 <Strong> Pre requisities: </Strong>
 
 Node - Version 6 and above
+
 Mongodb server 
-Mongoose ORM
+
+
 
 <strong> Start Instructions: </strong>
 
