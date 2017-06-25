@@ -10,8 +10,9 @@ Node - Version 6 and above
 Mongodb server 
 Mongoose ORM
 
-Start Instructions:
+<strong> Start Instructions: </strong>
 
-Install all the dependencies using the command npm install
+Install all the dependencies using the command -  npm install
 
+Now run the command - 
 Npm start . The app is configured to run at port 3000
